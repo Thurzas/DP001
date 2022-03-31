@@ -1,4 +1,3 @@
-# DP001
 <h2>It is just a web site for my Professionnal file</h2>
 
 <p>this project is about my training course and concern the "create a web site with CSS/HTML and Bootstrap" part.</p>
