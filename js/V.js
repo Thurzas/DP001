@@ -1,4 +1,3 @@
-//very simple vector class with basic operations.
 class V
 {
   constructor(x,y)

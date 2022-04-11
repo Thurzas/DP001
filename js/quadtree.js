@@ -95,6 +95,11 @@ class QuadTree {
     this.divided = false;
   }
 
+  size(){
+    let points = [];
+    this.query(this.boundary, points);
+    return points.length;
+  }
   subdivide() {
     let x = this.boundary.x;
     let y = this.boundary.y;

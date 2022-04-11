@@ -11,22 +11,41 @@ body{
     background:#000000;
 }
 .component
-{
-    width:100.79%;
-    background:#60b0df;
+{    
+    width:100%;
     margin-top : 10em;    
+}
+.component  >p,.component >h2{
+  position:absolute;
+  text-align: center;
+}
+
+.component > h2
+{
+  color:cornsilk;
+}
+.component > p{
+  margin-top: 30em;
+  color:#ffffff;
+}
+
+.component2
+{   
+  background-color: #ffffff;
+  width:100%;
+  margin-top : 10em;  
+  text-align: center; 
 }
 .logo
 {
-    position: absolute;
-    width:20em;
-    height:12em;
-    background-image: url("../img/logo.png");
-    background-size: 20em 12em;
+  position: absolute;
+  width:20em;
+  height:12em;
+  background-image: url("../img/logo.png");
+  background-size: 20em 12em;
 }
 .fabox
 {
-
     padding-left: 2em;
     padding-right: 2em;
 }
@@ -40,6 +59,7 @@ footer p{
 #particle-js {
     position: absolute;
     z-index: -10;
+    width:100%;
 }
 
 
