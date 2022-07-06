@@ -12,9 +12,9 @@ body{
 }
 .component
 {
-    width:auto;
+    width:auto !important;
     margin-top : 10em;
-    display:block;
+    display:block !important;
 }
 .component  >p,.component >h2{
   position:absolute;
