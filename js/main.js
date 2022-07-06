@@ -13,12 +13,12 @@ var blackhole;
 let G=0.0667;
 let param="blackHole";
 let background="#fff";
-let count=500;
+let count=200;
 let maxP=60;
 var color ="#fff"
 var colorh="#60a3ff";
 var spin = 6;
-countP=100;
+countP=50;
 function setup()
 {
   initHeaderAnimation();
