@@ -54,37 +54,33 @@ class Particle {
     let fy=Math.sin(theta)*force;
     let f=new V(-fx,-fy);
     let ff = new V(0,0);
-    /*if(circular)
-      ff= new V(Math.cos(90*Math.PI/180)*fx-Math.sin(90*Math.PI/180)*fy*spin,
-                  Math.sin(90*Math.PI/180)*fx + Math.cos(90*Math.PI/180)*fy*spin);
-    */
     return f;
 }
 
-  update(ctx) {
+  update(canvas) {
     this.v=this.v.add(this.a);
     this.v=this.v.limit(this.maxSpeed);
     this.location=this.location.add(this.v);
     this.a.x=0;
     this.a.y=0;
-    if(this.location.x>ctx.width)
+    if(this.location.x>canvas.width)
     {
       this.location.x=0;
       this.connects=[];
     }
-    if(this.location.y>ctx.height)
+    if(this.location.y>canvas.height)
     {
      this.location.y=0;
      this.connects=[];
     }
     if(this.location.x<0)
     {
-      this.location.x=ctx.width;
+      this.location.x=canvas.width;
       this.connects=[];
     }
     if(this.location.y<0)
     {
-      this.location.y=ctx.height;
+      this.location.y=canvas.height;
       this.connects=[];
     }
   }

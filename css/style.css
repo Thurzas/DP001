@@ -4,16 +4,16 @@
 .nav-item
 {
     margin-left: 5px;
-    margin-right: 5px;  
+    margin-right: 5px;
 }
 
 body{
     background:#000000;
 }
 .component
-{    
+{
     width:100%;
-    margin-top : 10em;    
+    margin-top : 10em;
 }
 .component  >p,.component >h2{
   position:absolute;
@@ -30,11 +30,11 @@ body{
 }
 
 .component2
-{   
+{
   background-color: #ffffff;
   width:100%;
-  margin-top : 10em;  
-  text-align: center; 
+  margin-top : 10em;
+  text-align: center;
 }
 .logo
 {
@@ -275,6 +275,7 @@ h2
   position:absolute;
   height: 25px;
   width: 25px;
+  margin-top: -20px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -291,7 +292,7 @@ h2
  background-size: 25%;
  background-repeat:repeat;
  display:inline-flexbox;
-}   
+}
 
 @media only screen and (max-width: 1000px) {
     .fabox
@@ -301,11 +302,11 @@ h2
     }
     .navbar{
         font-size: 24px !important;
-        
+
     }
     .logo
-    {   
-        width:8em !important;        
+    {
+        width:8em !important;
         height:5em !important;
         background-image: url("../img/logo.png");
         background-size: 8em 5em !important;
@@ -328,10 +329,10 @@ h2
     {
         float:right;
         margin-left: 1px;
-        margin-right: 1px;  
+        margin-right: 1px;
     }
     .logo
-    {   
+    {
         width:10em !important;
         height:5em !important;
         background-image: url("../img/logo.png");
@@ -347,10 +348,10 @@ h2
     {
         float:right;
         margin-left: 1px;
-        margin-right: 1px;  
+        margin-right: 1px;
     }
     .logo
-    {   
+    {
         width:13em;
         height:8em;
         background-image: url("../img/logo.png");
