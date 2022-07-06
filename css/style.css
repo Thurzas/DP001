@@ -12,8 +12,9 @@ body{
 }
 .component
 {
-    width:100%;
+    width:auto;
     margin-top : 10em;
+    display:block;
 }
 .component  >p,.component >h2{
   position:absolute;
@@ -25,7 +26,6 @@ body{
   color:cornsilk;
 }
 .component > p{
-  margin-top: 30em;
   color:#ffffff;
 }
 
@@ -315,7 +315,6 @@ h2
         float: none;
         vertical-align: top;
     }
-
     .navbar .navbar-collapse {
         text-align: center;
     }

@@ -25,11 +25,6 @@ function setup()
   initPostItIfExist();
 }
 
-function rotate(item,degree)
-{
-  console.log(item);
-  item.style.transform='rotate(' + degree+'deg)';
-}
 function randomize(item)
 {
   let colors = ["note","PinkNote","GNote","PurpleNote"];
@@ -40,6 +35,13 @@ function randomize(item)
 let random = function (min,max){
   return Math.random()*(max-min) + min;
 }
+
+function rotate(item,degree)
+{
+  console.log(item);
+  item.style.transform='rotate(' + degree+'deg)';
+}
+
 function initPostItIfExist(){
   const min=-20;
   const max=20
@@ -53,12 +55,13 @@ function initPostItIfExist(){
 
 
 function initHeaderAnimation(){
-  width=document.body.clientWidth;
-  height=document.body.clientHeight;
+  width=window.innerWidth;
+  height=window.innerHeight;
   canvas=document.getElementById("particle-js");
   c2=document.getElementById("blackHole");
   canvas.width=width;
-  canvas.height=height*.15;
+  canvas.height=height*0.5;
+  console.log(height);
   ctx=canvas.getContext("2d");
 
   if(c2 != undefined || c2!= null)
@@ -74,17 +77,6 @@ function initHeaderAnimation(){
     ctx2.globalAlpha=0.1;
   }
 
-  if(canvas.width<1000)
-  {
-    console.log("tiny screen")
-    countP=15;
-    pRange=30;
-  }
-  else
-  {
-    countP=100;
-    pRange=60;
-  }
   for (let i = 0; i < countP; i++) {
     let vec= new V(Math.random()*canvas.width,Math.random()*canvas.height);
     particles[i] = new Particle(vec.x, vec.y);
@@ -202,8 +194,3 @@ window.onload = function()
   setup();
   window.requestAnimationFrame(draw);
 }
-/*window.onload = function() {
-  setup();
-  setInterval("draw()", 1000/FPS);
-};
-*/
