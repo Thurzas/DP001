@@ -7,7 +7,7 @@ var ctx2;
 const FPS=30;
 var particles=[];
 var bparticles=[];
-var pRange=150;
+var pRange=300;
 var BRange=200;
 var blackhole;
 let G=0.0667;
