@@ -7,7 +7,7 @@ var ctx2;
 const FPS=30;
 var particles=[];
 var bparticles=[];
-var pRange=300;
+var pRange=30;
 var BRange=200;
 var blackhole;
 let G=0.0667;
@@ -163,7 +163,7 @@ function net(ctx){
   }
 
   for (let p of particles) {
-    let range = new Circle(p.location.x, p.location.y, pRange);
+    let range = new Circle(p.location.x, p.location.y, 6*pRange);
     let points = qtree.query(range);
     for (let point of points) {
       let other = point.userData;
