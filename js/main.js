@@ -8,7 +8,7 @@ const FPS=30;
 var particles=[];
 var bparticles=[];
 var pRange=30;
-var BRange=200;
+var BRange=400;
 var blackhole;
 let G=0.0667;
 let param="blackHole";
