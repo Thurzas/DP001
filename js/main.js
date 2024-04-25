@@ -163,7 +163,7 @@ function net(ctx){
   }
 
   for (let p of particles) {
-    let range = new Circle(p.location.x, p.location.y, 6*pRange);
+    let range = new Circle(p.location.x, p.location.y, 20*pRange);
     let points = qtree.query(range);
     for (let point of points) {
       let other = point.userData;
